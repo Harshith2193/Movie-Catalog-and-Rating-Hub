@@ -1,7 +1,5 @@
 # Movie-Catalog-and-Rating-Hub
 
-# Database Management System
-
 ## Description
 The **Movie-Catalog-and-Rating-Hub** is a software application designed to manage and maintain a database of movies. This system allows users to store, search, update, and delete movie details, add reviews, and view movie reviews. It also includes user registration and login features. Additionally, the system supports stored procedures and triggers for enhanced functionality.
 
