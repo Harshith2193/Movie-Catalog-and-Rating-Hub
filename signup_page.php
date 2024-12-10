@@ -47,8 +47,8 @@
 <body>
     <?php
         // Database connection
-        $servername = "localhost:3306";
-        $username = "root";
+        $servername = "";
+        $username = "";
         $password = "";
         $dbname = "movie_database"; // Change database name to "trial"
 
