@@ -19,5 +19,32 @@ The **Movie-Catalog-and-Rating-Hub** is a software application designed to manag
 - **Triggers**: Implement triggers for checking username uniqueness and updating movie ratings.
 
 
+
+
+
+### Project Screenshots
+
+### Signup Page
+![image](https://github.com/user-attachments/assets/bca0f880-b653-49be-bf40-eb971ab509cd)
+
+### Login Page
+![image](https://github.com/user-attachments/assets/d5d96acf-7f5e-4c65-aafb-6211996868a3)
+
+### Home Page
+![image](https://github.com/user-attachments/assets/de2e738b-c1b1-4243-b295-9aecb850c67b)
+![image](https://github.com/user-attachments/assets/005a79b7-27e0-4b45-8285-1a45dd8009a7)
+
+### After using the Filter in the Homepage
+![image](https://github.com/user-attachments/assets/a51bb437-9627-40da-9a36-c2782e2412ee)
+
+
+### About Actor Page
+![image](https://github.com/user-attachments/assets/a6806a46-f76a-418e-a1fe-7b38eae2d92c)
+![image](https://github.com/user-attachments/assets/b8f261ad-2102-44d4-9965-bcb42259aa94)
+
+
 ### Database Schema
 ![image](https://github.com/user-attachments/assets/39356405-dd6d-4e00-a10a-217871510ec6)
+
+
+
