@@ -34,13 +34,24 @@ The **Movie-Catalog-and-Rating-Hub** is a software application designed to manag
 ![image](https://github.com/user-attachments/assets/de2e738b-c1b1-4243-b295-9aecb850c67b)
 ![image](https://github.com/user-attachments/assets/005a79b7-27e0-4b45-8285-1a45dd8009a7)
 
-### After using the Filter in the Homepage
+### After using the Filter in the Home page
 ![image](https://github.com/user-attachments/assets/a51bb437-9627-40da-9a36-c2782e2412ee)
-
 
 ### About Actor Page
 ![image](https://github.com/user-attachments/assets/a6806a46-f76a-418e-a1fe-7b38eae2d92c)
 ![image](https://github.com/user-attachments/assets/b8f261ad-2102-44d4-9965-bcb42259aa94)
+
+### After using the Filter in the Actor page
+![image](https://github.com/user-attachments/assets/0ff4b4d5-678f-49cc-9bd9-f71b9e0409aa)
+
+### About Director Page
+![image](https://github.com/user-attachments/assets/1cbbf944-ce8a-4cd0-99fa-e13bab18ef5c)
+
+### After using the Filter in the Director page
+![image](https://github.com/user-attachments/assets/04bb127e-d258-41e2-8fd3-a642bd3e6114)
+
+
+
 
 
 ### Database Schema
