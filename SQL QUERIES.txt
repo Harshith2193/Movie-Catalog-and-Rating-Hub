@@ -1,0 +1,99 @@
+**SQL QUERIES USED IN THE PROJECT**
+
+- SignUp Page:
+INSERT INTO signup (name, email, dob, username, password)
+VALUES ('$name', '$email', '$dob', '$username', '$password')
+
+
+- SignUp Page Trigger:
+/*Trigger*/
+CREATE TRIGGER `before_insert_observer` BEFORE INSERT ON `signup`
+FOR EACH ROW BEGIN
+  DECLARE username_count INT; 
+  -- Check if the new username already exists 
+  SELECT COUNT(*) INTO username_count
+  FROM signup
+  WHERE Username = NEW.Username;
+  -- If the username already exists, raise an error
+  IF username_count > 0 THEN
+    SIGNAL SQLSTATE '45000'
+    SET MESSAGE_TEXT = 'Username already exists';
+  END IF;
+END
+
+
+- Login Page:
+SELECT * FROM signup WHERE username='$input_username' AND password='$input_password'
+
+
+- Searching for Movies Page:
+$query = "SELECT * FROM movie WHERE ";
+$conditions = array();
+if ($id1 !== null) {
+    $conditions[] = "actorid = $id1";
+}
+if ($id2 !== null) {
+    $conditions[] = "directorid = $id2";
+}
+if ($id3 !== null) {
+    $conditions[] = "genreid = $id3";
+}
+if ($id4 !== null) {
+    $conditions[] = "languageid = $id4";
+}
+$query .= implode(" AND ", $conditions);
+$result = mysqli_query($connection, $query);
+
+
+
+- Searching for Actor Page:
+/*Stored Procedure*/
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `GetActorDetails`(IN in_actor_id INT)
+BEGIN
+  SELECT name, dateofbirth, gender, noteworthy
+  FROM actor
+  WHERE actorid = in_actor_id;
+END$$
+DELIMITER ;
+
+
+
+- Searching for Director Page:
+/*Stored Procedure*/
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `GetDirectorDetails`(IN selectedDirectorID INT)
+BEGIN
+  SELECT name, dateofbirth, gender, noteworthy
+  FROM director
+  WHERE directorid = selectedDirectorID;
+END$$
+DELIMITER ;
+
+
+
+- Writing a Review Page:
+INSERT INTO movie_review (movieid, reviewtext, rating) 
+VALUES ('$selectedMovieTitle', '$reviewText', '$rating')
+Searching a Particular Movie Review Page:
+
+- Searching a Particular Movie Review Page:
+SELECT reviewid, reviewtext, rating 
+FROM movie_review 
+WHERE movieid = '$selectedMovieTitle'
+
+
+- Calculating Average Rating from Users in Home Page Trigger:
+/*Trigger*/
+CREATE TRIGGER `calculate_average_rating` AFTER INSERT ON `movie_review`
+FOR EACH ROW BEGIN
+  DECLARE avg_rating FLOAT;
+  -- Calculate the average rating for the movie
+  SELECT AVG(rating) INTO avg_rating
+  FROM movie_review
+  WHERE movieid = NEW.movieid;
+  -- Update the average rating in the movie table
+  UPDATE movie
+  SET average_rating = avg_rating
+  WHERE movieid = NEW.movieid;
+END 
