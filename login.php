@@ -53,8 +53,8 @@
   // Check if the form is submitted
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
       // Database connection
-      $servername = "localhost:3306";
-      $username = "root";
+      $servername = "";
+      $username = "";
       $password = "";
       $dbname = "movie_database";
 
