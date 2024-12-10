@@ -50,7 +50,16 @@ The **Movie-Catalog-and-Rating-Hub** is a software application designed to manag
 ### After using the Filter in the Director page
 ![image](https://github.com/user-attachments/assets/04bb127e-d258-41e2-8fd3-a642bd3e6114)
 
+### Review Page
+![image](https://github.com/user-attachments/assets/b96e1608-7963-4875-9029-ab6133ef31e1)
+![image](https://github.com/user-attachments/assets/bec95dc1-7ef7-4e54-a86c-419a1b94f0b5)
+![image](https://github.com/user-attachments/assets/77a24044-fa09-49b3-b0d1-93febb5e5625)
+![image](https://github.com/user-attachments/assets/019fdbe2-b063-4dd0-acbc-3410d4f79f97)
 
+
+
+### Reviews for a Particular Movie filled by the websites Users
+![image](https://github.com/user-attachments/assets/97397b6a-dda5-42fa-8d31-41340c80b0a8)
 
 
 
