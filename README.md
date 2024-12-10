@@ -56,15 +56,20 @@ The **Movie-Catalog-and-Rating-Hub** is a software application designed to manag
 ![image](https://github.com/user-attachments/assets/77a24044-fa09-49b3-b0d1-93febb5e5625)
 ![image](https://github.com/user-attachments/assets/019fdbe2-b063-4dd0-acbc-3410d4f79f97)
 
-
-
 ### Reviews for a Particular Movie filled by the websites Users
 ![image](https://github.com/user-attachments/assets/97397b6a-dda5-42fa-8d31-41340c80b0a8)
 
 
 
 ### Database Schema
-![image](https://github.com/user-attachments/assets/39356405-dd6d-4e00-a10a-217871510ec6)
+![image](https://github.com/user-attachments/assets/87b85af7-ec5f-47d2-a131-28059fd8a01b)
+
+### ER Diagram
+![Flowchart Template](https://github.com/user-attachments/assets/88405478-a09b-40d5-9023-34dafa3768f2)
+
+### Dataflow Diagram
+![image](https://github.com/user-attachments/assets/805cb640-c25e-47e6-b49d-2d861aae4508)
+
 
 
 
